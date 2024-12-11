@@ -1,7 +1,7 @@
 /* eslint-env serviceworker */
 
 const CACHE_NAME = "todo-app-cache-v1";
-const urlsToCache = ["/", "/index.html", "/App.js", "/App.css"];
+const urlsToCache = ["/", "/index.html"];
 
 // Install Service Worker
 self.addEventListener("install", (event) => {
