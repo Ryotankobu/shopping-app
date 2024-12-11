@@ -3,12 +3,12 @@
   "name": "Shopping List App",
   "icons": [
     {
-      "src": "gloom.png",
+      "src": "meowth_192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "gloom.png",
+      "src": "meowth512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
