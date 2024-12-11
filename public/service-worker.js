@@ -5,6 +5,7 @@ const urlsToCache = ["/", "/index.html", "/App.js", "/App.css"];
 
 // Install Service Worker
 self.addEventListener("install", (event) => {
+  console.log("Service Worker installing...");
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       console.log("Opened cache");
@@ -15,6 +16,7 @@ self.addEventListener("install", (event) => {
 
 // Fetch from Cache
 self.addEventListener("fetch", (event) => {
+  console.log("Fetching:", event.request.url);
   event.respondWith(
     caches.match(event.request).then((response) => {
       // Return cached resource or fetch from the network
@@ -25,6 +27,7 @@ self.addEventListener("fetch", (event) => {
 
 // Activate Service Worker
 self.addEventListener("activate", (event) => {
+  console.log("Service Worker activating...");
   const cacheWhitelist = [CACHE_NAME];
   event.waitUntil(
     caches.keys().then((cacheNames) =>
