@@ -1,6 +1,21 @@
 {
   "short_name": "ShopList",
   "name": "Shopping List App",
+  "screenshots": [
+  {
+    "src": "screenshot-desktop.png",
+    "type": "image/png",
+    "sizes": "1280x720",
+    "form_factor": "wide"
+  },
+  {
+    "src": "screenshot-mobile.png",
+    "type": "image/png",
+    "sizes": "360x740",
+    "form_factor": "narrow"
+  }
+],
+
   "icons": [
     {
       "src": "meowth_192x192.png",
